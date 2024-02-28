@@ -1,0 +1,188 @@
+.small-divider {
+  text-align: center;
+  border-left: 1.5px solid red;
+  height: 1vw; /* Adjusted to use viewport width units */
+  margin-right: 0.5vw; /* Adjusted to use viewport width units */
+}
+
+.block {
+  background: linear-gradient(to top, #fff3b5, #fffbf5);
+  margin: 0; /* Remove default body margin */
+}
+
+.main-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 1vw; /* Adjusted to use viewport width units */
+}
+
+.main-upper-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.upper-small-block {
+  flex: 15%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.4vw; /* Adjusted to use viewport width units */
+}
+
+.upper-left-block {
+  flex: 30.70%;
+}
+
+.upper-right-block {
+  flex: 69.30%;
+}
+
+.upper-right-image {
+  height: 100%;
+  width: 50%;
+}
+
+.lower-small-block {
+  flex: 85%;
+  display: flex;
+  align-content: space-between;
+}
+
+.lower-left-image {
+  flex: 30%;
+  max-height: 49vw; /* Adjusted to use viewport width units */
+  max-width: 40vw; /* Adjusted to use viewport width units */
+}
+
+.lower-right-block {
+  flex: 70%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.first-line {
+  font-size: 13; 
+  text-align: center;
+}
+
+.second-line {
+  text-align: center;margin-left: 10px; margin-right: 10px;
+}
+
+.third-line {
+  font-size: 13; 
+  text-align: center;
+  font-weight: bold;
+}
+
+.divider {
+  border-color: #ba0101;
+  border-style: solid;
+  border-width: 0.1vw 48vw; /* Adjusted to use viewport width units */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 10vh; /* Adjusted to use viewport height units */
+  background-color: red;
+}
+
+.phone-icon {
+  width: 2vw; /* Adjusted to use viewport width units */
+  height: 2vw; /* Adjusted to use viewport width units */
+  border-radius: 50%;
+}
+
+.footer p {
+  color: white;
+}
+
+.lower-right-image {
+  max-height: 35vw; /* Adjusted to use viewport width units */
+  width: 100%;
+}
+
+.lower-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  height: 110%;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.data-divider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.data-divider div {
+  margin-right: 0.5vw; /* Adjusted to use viewport width units */
+}
+
+@media (max-width: 767px) {
+  .main-block {
+      font-size: 13px; /* Adjusted font size for smaller screens */
+  }
+
+  .upper-right-image {
+      max-width: 50%;
+      max-height: 130%;
+  }
+
+  .upper-small-block {
+      padding: 2vw 1vw; /* Adjusted padding for better spacing on smaller screens */
+  }
+
+  .lower-small-block {
+      flex-direction: column; /* Stack items vertically on small screens */
+  }
+
+  .lower-right-block {
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .lower-left-image{
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 60%;
+      max-height: 80%;
+  }
+  .lower-right-image,
+  .lower-image {
+      max-height: none; /* Remove max-height on small screens */
+      max-width: 100%; /* Adjusted to use viewport width units */
+  }
+
+  .divider {
+      border-width: 0.2vw 100%; /* Adjusted border width for better spacing on smaller screens */
+  }
+
+  .data-divider {
+      font-size: 12px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .small-divider {
+      height: 3vw;
+  }
+
+  .footer {
+      flex-direction: column; /* Stack items horizontally on small screens */
+      align-items: center;
+  }
+
+  .footer p {
+      margin-top: auto;
+  }
+}
